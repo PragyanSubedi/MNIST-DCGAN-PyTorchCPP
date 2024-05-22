@@ -28,7 +28,9 @@ Download the dataset from here: https://www.kaggle.com/datasets/hojjatk/mnist-da
 
 Once the dataset is downloaded, extract it in the `root` directory with the name `mnist` and remove all the folders inside it. Then, rename the `.idx{num}-ubyte` suffix to `-idx{num}-ubyte` suffix such that it matches with the torch library's filenaming specifications for MNIST.
 
-<img src="assets/mnist.png">
+The folder structure should look like this:
+
+<img src="assets/example_folder_structure.png">
 
 ### Run the script
 
