@@ -16,7 +16,7 @@ Once the library is downloaded, copy the absolute path of the 'share/cmake/Torch
 mkdir checkpoints
 mkdir build
 cd build
-cmake -DCMAKE_PREFIX_PATH=C:'/C++/example_app/libtorch/share/cmake/Torch'
+cmake .. -DCMAKE_PREFIX_PATH=C:'/C++/example_app/libtorch/share/cmake/Torch'
 cmake --build . --config Release
 ```
 
@@ -37,7 +37,7 @@ The folder structure should look like this:
 Run the script as follows from the root folder (not the build folder).
 
 ```
-build/Release/example-app
+build/Release/dcgan
 ```
 
 Note: To rebuild app after changes are made to dcgan.cpp, run the following from the root folder.
@@ -49,7 +49,7 @@ build/Release/dcgan
 
 ### View sample generations after model is trained
 
-Run the following Python file to view the sample generations for a given sample checkpoint:
+Run the following Python file to view the sample generations for a given sample checkpoint as `out.png`:
 
 ```
 python display-samples.py -i checkpoints/dcgan-sample-1.pt
